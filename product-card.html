@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Доска объялений нового поколения">
+   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+   <link rel="icon" type="image/ico" href="favicon.ico">
+   <meta name="msapplication-TileColor" content="#e5d8ed">
+   <meta name="theme-color" content="#e5d8ed">
+   <meta name="format-detection" content="telephone=no">
+   <link rel="stylesheet" href="css/nouislider.min.css">
+   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Rizz | Карточка товара</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <div class="preloader">
+         <span class="preloader__spinner"></span>
+      </div>
+      <header class="header element-animation">
+         <div class="header__body container">
+            <div class="header__top">
+               <div class="header__logo">
+                  <a href="index.html" aria-label="RizzCards">
+                     <img src="img/logo.svg" alt="">
+                  </a>
+               </div>
+               <form action="" method="" class="header__search">
+                  <input type="search" placeholder="Поиск">
+                  <button type="submit" class="header__search-submit" aria-label="Искать">
+                     <svg class="header__search-icon">
+                        <use xlink:href="img/icons/icons.svg#search"></use>
+                     </svg>
+                  </button>
+               </form>
+               <div class="header__add-buttons">
+                  <button class="header__filter" aria-label="Фильтр">
+                     <svg>
+                        <use xlink:href="img/icons/icons.svg#filter"></use>
+                     </svg>
+                  </button>
+                  <button class="header__menu-icon" aria-label="Меню">
+                     <svg>
+                        <use xlink:href="img/icons/icons.svg#burger"></use>
+                     </svg>
+                  </button>
+               </div>
+            </div>
+            <div class="header__bottom">
+               <div class="header__catalog">
+                  <button class="header__catalog-button button" aria-label="Каталог">
+                     <svg>
+                        <use xlink:href="img/icons/icons.svg#menu"></use>
+                     </svg>
+                     <span>Каталог</span>
+                  </button>
+               </div>
+               <div class="header__navigations">
+                  <nav class="header__menu menu">
+                     <ul class="menu__list">
+                        <li class="menu__list-item">
+                           <a href="" class="menu__link">
+                              <span>Блогерам</span>
+                              <svg class="menu__link-arrow">
+                                 <use xlink:href="img/icons/icons.svg#chevron-down"></use>
+                              </svg>
+                           </a>
+                           <ul class="menu__sublist">
+                              <li><a href="" class="menu__sublist-link">Ссылка 1</a></li>
+                              <li><a href="" class="menu__sublist-link">Ссылка 2</a></li>
+                           </ul>
+                        </li>
+                        <li class="menu__list-item">
+                           <a href="" class="menu__link">
+                              <span>Селлерам</span>
+                              <svg class="menu__link-arrow">
+                                 <use xlink:href="img/icons/icons.svg#chevron-down"></use>
+                              </svg>
+                           </a>
+                           <ul class="menu__sublist">
+                              <li><a href="" class="menu__sublist-link">Рост продаж на WB</a></li>
+                              <li><a href="" class="menu__sublist-link">Рост продаж на Ozon</a></li>
+                           </ul>
+                        </li>
+                        <li class="menu__list-item">
+                           <a href="" class="menu__link">
+                              <span>Производителям</span>
+                              <svg class="menu__link-arrow">
+                                 <use xlink:href="img/icons/icons.svg#chevron-down"></use>
+                              </svg>
+                           </a>
+                           <ul class="menu__sublist">
+                              <li><a href="" class="menu__sublist-link">Ссылка 1</a></li>
+                              <li><a href="" class="menu__sublist-link">Ссылка 2</a></li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </nav>
+                  <div class="header__buttons">
+                     <button class="header__login button">
+                        <svg>
+                           <use xlink:href="img/icons/icons.svg#user"></use>
+                        </svg>
+                        <span>Войти</span>
+                     </button>
+                     <button class="header__add button">
+                        <svg>
+                           <use xlink:href="img/icons/icons.svg#plus"></use>
+                        </svg>
+                        <span>Разместить бесплатно</span>
+                     </button>
+                  </div>
+               </div>
+               <div class="header__tags">
+                  <div class="header__tags-slider swiper">
+                     <div class="header__tags-slider-wrapper swiper-wrapper">
+                        <div class="header__tag swiper-slide">
+                           <svg class="header__tag-icon">
+                              <use xlink:href="img/icons/icons.svg#bloger"></use>
+                           </svg>
+                           <a href="catalog.html">Блогерам</a>
+                        </div>
+                        <div class="header__tag swiper-slide">
+                           <svg class="header__tag-icon">
+                              <use xlink:href="img/icons/icons.svg#seller"></use>
+                           </svg>
+                           <a href="catalog.html">Селлерам</a>
+                        </div>
+                        <div class="header__tag swiper-slide">
+                           <svg class="header__tag-icon">
+                              <use xlink:href="img/icons/icons.svg#manufact"></use>
+                           </svg>
+                           <a href="catalog.html">Производителям</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="header__catalog-menu catalog-menu">
+            <nav class="catalog-menu__nav">
+               <div class="catalog-menu__categories">
+                  <a href="catalog.html" class="catalog-menu__category" data-category="1">
+                     <svg>
+                        <use xlink:href="img/icons/icons.svg#w"></use>
+                     </svg>
+                     <span class="catalog-menu__category-text">Карточка WB</span>
+                     <span class="quantity">(4)</span>
+                  </a>
+                  <a href="catalog.html" class="catalog-menu__category" data-category="2">
+                     <svg>
+                        <use xlink:href="img/icons/icons.svg#car"></use>
+                     </svg>
+                     <span class="catalog-menu__category-text">Транспорт</span>
+                     <span class="quantity">(4)</span>
+                  </a>
+                  <a href="catalog.html" class="catalog-menu__category" data-category="3">
+                     <svg>
+                        <use xlink:href="img/icons/icons.svg#dish"></use>
+                     </svg>
+                     <span class="catalog-menu__category-text">Услуги</span>
+                     <span class="quantity">(4)</span>
+                  </a>
+                  <a href="catalog.html" class="catalog-menu__category" data-category="4">
+                     <svg>
+                        <use xlink:href="img/icons/icons.svg#hands"></use>
+                     </svg>
+                     <span class="catalog-menu__category-text">Для бизнеса</span>
+                     <span class="quantity">(4)</span>
+                  </a>
+                  <a href="catalog.html" class="catalog-menu__category" data-category="5">
+                     <svg>
+                        <use xlink:href="img/icons/icons.svg#baby"></use>
+                     </svg>
+                     <span class="catalog-menu__category-text">Детские товары</span>
+                     <span class="quantity">(4)</span>
+                  </a>
+                  <a href="catalog.html" class="catalog-menu__category" data-category="6">
+                     <svg>
+                        <use xlink:href="img/icons/icons.svg#electric"></use>
+                     </svg>
+                     <span class="catalog-menu__category-text">Электроника</span>
+                     <span class="quantity">(4)</span>
+                  </a>
+                  <a href="catalog.html" class="catalog-menu__category" data-category="7">
+                     <svg>
+                        <use xlink:href="img/icons/icons.svg#wear"></use>
+                     </svg>
+                     <span class="catalog-menu__category-text">Мода и стиль</span>
+                     <span class="quantity">(4)</span>
+                  </a>
+                  <a href="catalog.html" class="catalog-menu__category" data-category="8">
+                     <svg>
+                        <use xlink:href="img/icons/icons.svg#cosmetic"></use>
+                     </svg>
+                     <span class="catalog-menu__category-text">Красота и здоровье</span>
+                     <span class="quantity">(4)</span>
+                  </a>
+                  <a href="catalog.html" class="catalog-menu__category" data-category="9">
+                     <svg>
+                        <use xlink:href="img/icons/icons.svg#ball"></use>
+                     </svg>
+                     <span class="catalog-menu__category-text">Хобби и развлечения</span>
+                     <span class="quantity">(4)</span>
+                  </a>
+                  <a href="catalog.html" class="catalog-menu__category" data-category="10">
+                     <svg>
+                        <use xlink:href="img/icons/icons.svg#sport"></use>
+                     </svg>
+                     <span class="catalog-menu__category-text">Спорт и отдых</span>
+                     <span class="quantity">(4)</span>
+                  </a>
+                  <a href="catalog.html" class="catalog-menu__category" data-category="11">
+                     <svg>
+                        <use xlink:href="img/icons/icons.svg#shop"></use>
+                     </svg>
+                     <span class="catalog-menu__category-text">Для дома и дачи</span>
+                     <span class="quantity">(4)</span>
+                  </a>
+                  <a href="catalog.html" class="catalog-menu__category" data-category="12">
+                     <svg>
+                        <use xlink:href="img/icons/icons.svg#animal"></use>
+                     </svg>
+                     <span class="catalog-menu__category-text">Животные</span>
+                     <span class="quantity">(4)</span>
+                  </a>
+                  <a href="catalog.html" class="catalog-menu__category" data-category="13">
+                     <svg>
+                        <use xlink:href="img/icons/icons.svg#paint"></use>
+                     </svg>
+                     <span class="catalog-menu__category-text">Стройматериалы и инструменты</span>
+                     <span class="quantity">(4)</span>
+                  </a>
+                  <a href="catalog.html" class="catalog-menu__category" data-category="14">
+                     <svg>
+                        <use xlink:href="img/icons/icons.svg#circle"></use>
+                     </svg>
+                     <span class="catalog-menu__category-text">Хэндмейд</span>
+                     <span class="quantity">(4)</span>
+                  </a>
+                  <a href="catalog.html" class="catalog-menu__category" data-category="15">
+                     <svg>
+                        <use xlink:href="img/icons/icons.svg#port"></use>
+                     </svg>
+                     <span class="catalog-menu__category-text">Вакансии</span>
+                     <span class="quantity">(4)</span>
+                  </a>
+               </div>
+               <div class="catalog-menu__subcategories">
+                  <div class="catalog-menu__subcategory" data-subcategory="1">
+                     <a href="catalog.html" class="catalog-menu__title">
+                        <svg class="catalog-menu__back">
+                           <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                        </svg>
+                        Карточка WB</a>
+                     <ul class="catalog-menu__list">
+                        <li><a href="catalog.html" class="catalog-menu__link">Продажа квартиры <span
+                                 class="quantity">(4)</span></a></li>
+                        <li><a href="catalog.html" class="catalog-menu__link">Аренда комнаты длительно <span
+                                 class="quantity">(4)</span></a></li>
+                        <li><a href="catalog.html" class="catalog-menu__link">Продажа комнаты <span
+                                 class="quantity">(4)</span></a></li>
+                        <li><a href="catalog.html" class="catalog-menu__link">Аренда комнаты посуточно <span
+                                 class="quantity">(4)</span></a></li>
+                        <li><a href="catalog.html" class="catalog-menu__link">Продажа дома <span
+                                 class="quantity">(4)</span></a></li>
+                        <li><a href="catalog.html" class="catalog-menu__link">Аренда дома посуточно <span
+                                 class="quantity">(4)</span></a>
+                        </li>
+                        <li><a href="catalog.html" class="catalog-menu__link">Аренда квартиры длительно <span
+                                 class="quantity">(4)</span></a></li>
+                        <li><a href="catalog.html" class="catalog-menu__link">Аренда дома длительно <span
+                                 class="quantity">(4)</span></a>
+                        </li>
+                        <li><a href="catalog.html" class="catalog-menu__link">Аренда квартиры посуточно <span
+                                 class="quantity">(4)</span></a></li>
+                        <li><a href="catalog.html" class="catalog-menu__link">Коммерческая недвижимость <span
+                                 class="quantity">(4)</span></a></li>
+                        <li><a href="catalog.html" class="catalog-menu__link">Аренда комнаты длительно <span
+                                 class="quantity">(4)</span></a></li>
+                        <li><a href="catalog.html" class="catalog-menu__link">Прочие строения <span
+                                 class="quantity">(4)</span></a></li>
+
+                     </ul>
+                  </div>
+                  <div class="catalog-menu__subcategory" data-subcategory="2">
+                     <a href="catalog.html" class="catalog-menu__title">
+                        <svg class="catalog-menu__back">
+                           <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                        </svg>
+                        Транспорт</a>
+                     <ul class="catalog-menu__list">
+                        <li><a href="catalog.html" class="catalog-menu__link">Продажа квартиры <span
+                                 class="quantity">(4)</span></a></li>
+                        <li><a href="catalog.html" class="catalog-menu__link">Аренда комнаты длительно <span
+                                 class="quantity">(4)</span></a></li>
+                        <li><a href="catalog.html" class="catalog-menu__link">Продажа комнаты <span
+                                 class="quantity">(4)</span></a></li>
+                        <li><a href="catalog.html" class="catalog-menu__link">Аренда комнаты посуточно <span
+                                 class="quantity">(4)</span></a></li>
+                        <li><a href="catalog.html" class="catalog-menu__link">Продажа дома <span
+                                 class="quantity">(4)</span></a></li>
+                        <li><a href="catalog.html" class="catalog-menu__link">Аренда дома посуточно <span
+                                 class="quantity">(4)</span></a>
+                        </li>
+                        <li><a href="catalog.html" class="catalog-menu__link">Аренда квартиры длительно <span
+                                 class="quantity">(4)</span></a></li>
+                        <li><a href="catalog.html" class="catalog-menu__link">Аренда дома длительно <span
+                                 class="quantity">(4)</span></a>
+                        </li>
+                        <li><a href="catalog.html" class="catalog-menu__link">Аренда квартиры посуточно <span
+                                 class="quantity">(4)</span></a></li>
+                        <li><a href="catalog.html" class="catalog-menu__link">Коммерческая недвижимость <span
+                                 class="quantity">(4)</span></a></li>
+                        <li><a href="catalog.html" class="catalog-menu__link">Аренда комнаты длительно <span
+                                 class="quantity">(4)</span></a></li>
+                        <li><a href="catalog.html" class="catalog-menu__link">Прочие строения <span
+                                 class="quantity">(4)</span></a></li>
+                     </ul>
+                  </div>
+                  <div class="catalog-menu__subcategory" data-subcategory="3">
+                     <a href="catalog.html" class="catalog-menu__title">
+                        <svg class="catalog-menu__back">
+                           <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                        </svg>
+                        Услуги</a>
+                     <ul class="catalog-menu__list">
+                        <li><a href="catalog.html" class="catalog-menu__link">Продажа квартиры <span
+                                 class="quantity">(4)</span></a></li>
+                        <li><a href="catalog.html" class="catalog-menu__link">Аренда комнаты длительно <span
+                                 class="quantity">(4)</span></a>
+                        </li>
+                        <li><a href="catalog.html" class="catalog-menu__link">Продажа комнаты <span
+                                 class="quantity">(4)</span></a></li>
+                        <li><a href="catalog.html" class="catalog-menu__link">Аренда комнаты посуточно <span
+                                 class="quantity">(4)</span></a>
+                        </li>
+                        <li><a href="catalog.html" class="catalog-menu__link">Продажа дома <span
+                                 class="quantity">(4)</span></a></li>
+                        <li><a href="catalog.html" class="catalog-menu__link">Аренда дома посуточно <span
+                                 class="quantity">(4)</span></a>
+                        </li>
+                        <li><a href="catalog.html" class="catalog-menu__link">Аренда квартиры длительно <span
+                                 class="quantity">(4)</span></a>
+                        </li>
+                        <li><a href="catalog.html" class="catalog-menu__link">Аренда дома длительно <span
+                                 class="quantity">(4)</span></a>
+                        </li>
+                        <li><a href="catalog.html" class="catalog-menu__link">Аренда квартиры посуточно <span
+                                 class="quantity">(4)</span></a>
+                        </li>
+                        <li><a href="catalog.html" class="catalog-menu__link">Коммерческая недвижимость <span
+                                 class="quantity">(4)</span></a>
+                        </li>
+                        <li><a href="catalog.html" class="catalog-menu__link">Аренда комнаты длительно <span
+                                 class="quantity">(4)</span></a>
+                        </li>
+                        <li><a href="catalog.html" class="catalog-menu__link">Прочие строения <span
+                                 class="quantity">(4)</span></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </nav>
+         </div>
+      </header>
+      <main>
+         <div class="catalog-search element-animation">
+            <div class="catalog-search__body container">
+               <form action="" method="" class="catalog-search__form">
+                  <input type="search" placeholder="Поиск">
+                  <svg class="catalog-search__icon">
+                     <use xlink:href="img/icons/icons.svg#search"></use>
+                  </svg>
+                  <button type="submit" class="catalog-search__submit" aria-label="Искать"> Искать </button>
+               </form>
+            </div>
+         </div>
+         <section class="catalog product-page">
+            <div class="catalog__body container">
+
+               <div class="breadcrumbs">
+                  <a href="">Главная</a>
+                  /
+                  <a href="">Карточки WB</a>
+                  /
+                  <span>Продаю карточку товара</span>
+               </div>
+
+               <div class="product-card">
+                  <div class="product-card__gallery">
+                     <div class="product-card__sl-con">
+                        <div thumbsSlider="" class="product-card__slider-thumb swiper">
+                           <div class="product-card__slider-thumb-wrapper swiper-wrapper">
+                              <div class="product-card__thumb swiper-slide">
+                                 <picture>
+                                    <source srcset="img/products/img5.webp" type="image/webp"><img
+                                       src="img/products/img5.png">
+                                 </picture>
+                              </div>
+                              <div class="product-card__thumb swiper-slide">
+                                 <picture>
+                                    <source srcset="img/products/img5.webp" type="image/webp"><img
+                                       src="img/products/img5.png">
+                                 </picture>
+                              </div>
+                              <div class="product-card__thumb swiper-slide">
+                                 <picture>
+                                    <source srcset="img/products/img5.webp" type="image/webp"><img
+                                       src="img/products/img5.png">
+                                 </picture>
+                              </div>
+                              <div class="product-card__thumb swiper-slide">
+                                 <picture>
+                                    <source srcset="img/products/img5.webp" type="image/webp"><img
+                                       src="img/products/img5.png">
+                                 </picture>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="product-card__slider swiper">
+                        <div class="swiper-wrapper">
+                           <div class="product-card__slide swiper-slide">
+                              <picture>
+                                 <source srcset="img/products/img5.webp" type="image/webp"><img
+                                    src="img/products/img5.png">
+                              </picture>
+                           </div>
+                           <div class="product-card__slide swiper-slide">
+                              <picture>
+                                 <source srcset="img/products/img5.webp" type="image/webp"><img
+                                    src="img/products/img5.png">
+                              </picture>
+                           </div>
+                           <div class="product-card__slide swiper-slide">
+                              <picture>
+                                 <source srcset="img/products/img5.webp" type="image/webp"><img
+                                    src="img/products/img5.png">
+                              </picture>
+                           </div>
+                           <div class="product-card__slide swiper-slide">
+                              <picture>
+                                 <source srcset="img/products/img5.webp" type="image/webp"><img
+                                    src="img/products/img5.png">
+                              </picture>
+                           </div>
+                        </div>
+                        <div class="product-card__slider-prev slider-button-prev swiper-button-prev">
+                           <svg>
+                              <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                           </svg>
+                        </div>
+                        <div class="product-card__slider-next slider-button-next swiper-button-next">
+                           <svg>
+                              <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                           </svg>
+                        </div>
+                     </div>
+
+                  </div>
+                  <div class="product-card__details">
+                     <div class="product-card__details-main">
+                        <h1 class="product-card__name">Продаю карточку товара</h1>
+                        <div class="product-card__date-share">
+                           <div class="product-card__date">
+                              <svg>
+                                 <use xlink:href="img/icons/icons.svg#calendar"></use>
+                              </svg>
+                              <span>Размещено: 01 июля 2024, 17:32</span>
+                           </div>
+                           <div class="product-card__share">
+                              <button class="product-card__share-open">
+                                 <span>Поделиться</span>
+                                 <svg>
+                                    <use xlink:href="img/icons/icons.svg#share"></use>
+                                 </svg>
+                              </button>
+                              <div class="product-card__share-block share-block">
+                                 <div class="share-block__title">Поделиться</div>
+                                 <div class="share-block__socials">
+                                    <a href="" class="share-block__link" aria-label="Вконтакте">
+                                       <svg>
+                                          <use xlink:href="img/icons/icons.svg#vk"></use>
+                                       </svg>
+                                    </a>
+                                    <a href="" class="share-block__link" aria-label="Одноклассники">
+                                       <svg>
+                                          <use xlink:href="img/icons/icons.svg#ok"></use>
+                                       </svg>
+                                    </a>
+                                 </div>
+                                 <div class="share-block__copy">
+                                    <input type="text" id="text-to-copy"
+                                       value="https://rizz.cards/kartochka-wb/prodayu-kartochku-tovara-2"
+                                       class="share-block__copy-text" disabled>
+                                    <button class="share-block__copy-button" id="button-to-copy">
+                                       <svg>
+                                          <use xlink:href="img/icons/icons.svg#copy"></use>
+                                       </svg>
+                                       <span class="success-message">Скопировано!</span>
+                                    </button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="product-card__description">
+                           <div class="product-card__description-title">Описание</div>
+                           <div class="product-card__description-text">
+                              <p>Продаю карточку — Набор свечей для торта 'Фонтан' - непременный атрибут праздника.
+                                 Такие свечи обязательно поднимут
+                                 настроение. Время работы до 40 сек. Высота свечи: 12.5 см. Материал: бумага, пластик,
+                                 горючая смесь. Предназначено
+                                 для использования на открытом воздухе.</p>
+                              <p>В упаковке 4 штуки.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="product-card__details-more">
+                        <div class="product-card__price-links">
+                           <div class="product-card__price">150,000 ₽</div>
+                           <button class="product-card__write-message">Написать продавцу</button>
+                           <button class="product-card__buy">Купить
+                              <svg>
+                                 <use xlink:href="img/icons/icons.svg#cart"></use>
+                              </svg>
+                           </button>
+                           <p class="product-card__bs">
+                              <svg>
+                                 <use xlink:href="img/icons/icons.svg#shield"></use>
+                              </svg>
+                              Безопасная сделка
+                           </p>
+                        </div>
+                        <div class="product-card__author author">
+                           <div class="author__card">
+                              <a href="user.html" class="author__image">
+                                 <picture>
+                                    <source srcset="img/testimonials/author-ava.webp" type="image/webp"><img
+                                       src="img/testimonials/author-ava.png" alt="">
+                                 </picture>
+                              </a>
+                              <div class="author__info">
+                                 <a href="user.html" class="author__name">Петя</a>
+                                 <p class="author__reg-date">На RIZZ CARDS с 29.05.2024</p>
+                                 <div class="author__rating rating">
+                                    <svg class="rating__star checked">
+                                       <use xlink:href="img/icons/icons.svg#star"></use>
+                                    </svg>
+                                    <svg class="rating__star checked">
+                                       <use xlink:href="img/icons/icons.svg#star"></use>
+                                    </svg>
+                                    <svg class="rating__star checked">
+                                       <use xlink:href="img/icons/icons.svg#star"></use>
+                                    </svg>
+                                    <svg class="rating__star checked">
+                                       <use xlink:href="img/icons/icons.svg#star"></use>
+                                    </svg>
+                                    <svg class="rating__star">
+                                       <use xlink:href="img/icons/icons.svg#star"></use>
+                                    </svg>
+                                    <span>(5)</span>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="author__verify">
+                              <a href="user.html" class="author__verify-profil">
+                                 <svg>
+                                    <use xlink:href="img/icons/icons.svg#double-check"></use>
+                                 </svg>
+                                 <span>Профиль подтвержден</span>
+                              </a>
+                              <div class="author__verify-contacts">
+                                 <p>
+                                    <svg>
+                                       <use xlink:href="img/icons/icons.svg#double-check"></use>
+                                    </svg>
+                                    <span>Телефон подтверждён</span>
+                                 </p>
+                                 <p>
+                                    <svg>
+                                       <use xlink:href="img/icons/icons.svg#double-check"></use>
+                                    </svg>
+                                    <span>Email подтверждён</span>
+                                 </p>
+                                 <p>
+                                    <svg>
+                                       <use xlink:href="img/icons/icons.svg#double-check"></use>
+                                    </svg>
+                                    <span>Документы и фото проверены</span>
+                                 </p>
+                              </div>
+                           </div>
+
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="ellipse-3"></div>
+            <div class="ellipse-4"></div>
+         </section>
+         <section class="testimonials">
+            <div class="testimonials__body container">
+               <h2 class="testimonials__title">Отзывы</h2>
+               <div class="testimonials__chat">
+
+                  <div class="testimonials__chat-items">
+                     <div class="testimonial">
+                        <div class="testimonial__body">
+                           <div class="testimonial__author">
+                              <div class="testimonial__author-image">
+                                 <picture>
+                                    <source srcset="img/testimonials/author-ava.webp" type="image/webp"><img
+                                       src="img/testimonials/author-ava.png" alt="">
+                                 </picture>
+                              </div>
+                              <div class="testimonial__author-info">
+                                 <div class="testimonial__author-main">
+                                    <p class="testimonial__author-name">Alex K.</p>
+                                    <p class="testimonial__author-status">Сделка состоялась «<span>Карточка
+                                          товара</span>»</p>
+                                 </div>
+                                 <div class="testimonial__author-rating rating">
+                                    <svg class="rating__star checked">
+                                       <use xlink:href="img/icons/icons.svg#star"></use>
+                                    </svg>
+                                    <svg class="rating__star checked">
+                                       <use xlink:href="img/icons/icons.svg#star"></use>
+                                    </svg>
+                                    <svg class="rating__star checked">
+                                       <use xlink:href="img/icons/icons.svg#star"></use>
+                                    </svg>
+                                    <svg class="rating__star ">
+                                       <use xlink:href="img/icons/icons.svg#star"></use>
+                                    </svg>
+                                    <svg class="rating__star">
+                                       <use xlink:href="img/icons/icons.svg#star"></use>
+                                    </svg>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="testimonial__message">
+                              Но реплицированные с зарубежных источников, современные исследования указаны как
+                              претенденты
+                              на роль ключевых факторов.
+                              Учитывая ключевые сценарии поведения, внедрение современных методик предоставляет широкие
+                              возможности для системы
+                              массового участия. Кстати, тщательные исследования конкурентов, которые представляют собой
+                              яркий пример
+                              континентально-европейского типа политической культуры, будут объединены в целые кластеры
+                              себе подобных.
+                           </div>
+                           <div class="testimonial__date">
+                              Jan 20, 2024
+                           </div>
+                        </div>
+                     </div>
+                     <div class="testimonial">
+                        <div class="testimonial__body">
+                           <div class="testimonial__author">
+                              <div class="testimonial__author-image">
+                                 <picture>
+                                    <source srcset="img/testimonials/author-ava.webp" type="image/webp"><img
+                                       src="img/testimonials/author-ava.png" alt="">
+                                 </picture>
+                              </div>
+                              <div class="testimonial__author-info">
+                                 <div class="testimonial__author-main">
+                                    <p class="testimonial__author-name">Alex K.</p>
+                                    <p class="testimonial__author-status">Сделка состоялась «<span>Карточка
+                                          товара</span>»</p>
+                                 </div>
+                                 <div class="testimonial__author-rating rating">
+                                    <svg class="rating__star checked">
+                                       <use xlink:href="img/icons/icons.svg#star"></use>
+                                    </svg>
+                                    <svg class="rating__star checked">
+                                       <use xlink:href="img/icons/icons.svg#star"></use>
+                                    </svg>
+                                    <svg class="rating__star checked">
+                                       <use xlink:href="img/icons/icons.svg#star"></use>
+                                    </svg>
+                                    <svg class="rating__star checked">
+                                       <use xlink:href="img/icons/icons.svg#star"></use>
+                                    </svg>
+                                    <svg class="rating__star">
+                                       <use xlink:href="img/icons/icons.svg#star"></use>
+                                    </svg>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="testimonial__message">
+                              Но реплицированные с зарубежных источников, современные исследования указаны как
+                              претенденты
+                              на роль ключевых факторов.
+                              Учитывая ключевые сценарии поведения, внедрение современных методик предоставляет широкие
+                              возможности для системы
+                              массового участия. Кстати, тщательные исследования конкурентов, которые представляют собой
+                              яркий пример
+                              континентально-европейского типа политической культуры, будут объединены в целые кластеры
+                              себе подобных.
+                           </div>
+                           <div class="testimonial__date">
+                              Jan 20, 2024
+                           </div>
+                        </div>
+                        <div class="testimonial__body testimonial__answer">
+                           <div class="testimonial__author">
+                              <div class="testimonial__author-image">
+                                 <picture>
+                                    <source srcset="img/testimonials/author-ava2.webp" type="image/webp"><img
+                                       src="img/testimonials/author-ava2.png" alt="">
+                                 </picture>
+                              </div>
+                              <div class="testimonial__author-info">
+                                 <div class="testimonial__author-main">
+                                    <p class="testimonial__author-name">Петя</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="testimonial__message">
+                              Комментарий на отзыв будет тут
+                           </div>
+                           <div class="testimonial__date">
+                              Jan 20, 2024
+                           </div>
+                        </div>
+                     </div>
+                     <div class="testimonial">
+                        <div class="testimonial__body">
+                           <div class="testimonial__author">
+                              <div class="testimonial__author-image">
+                                 <picture>
+                                    <source srcset="img/testimonials/author-ava.webp" type="image/webp"><img
+                                       src="img/testimonials/author-ava.png" alt="">
+                                 </picture>
+                              </div>
+                              <div class="testimonial__author-info">
+                                 <div class="testimonial__author-main">
+                                    <p class="testimonial__author-name">Alex K.</p>
+                                    <p class="testimonial__author-status">Сделка состоялась «<span>Карточка
+                                          товара</span>»</p>
+                                 </div>
+                                 <div class="testimonial__author-rating rating">
+                                    <svg class="rating__star checked">
+                                       <use xlink:href="img/icons/icons.svg#star"></use>
+                                    </svg>
+                                    <svg class="rating__star checked">
+                                       <use xlink:href="img/icons/icons.svg#star"></use>
+                                    </svg>
+                                    <svg class="rating__star checked">
+                                       <use xlink:href="img/icons/icons.svg#star"></use>
+                                    </svg>
+                                    <svg class="rating__star checked">
+                                       <use xlink:href="img/icons/icons.svg#star"></use>
+                                    </svg>
+                                    <svg class="rating__star checked">
+                                       <use xlink:href="img/icons/icons.svg#star"></use>
+                                    </svg>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="testimonial__message">
+                              Но реплицированные с зарубежных источников, современные исследования указаны как
+                              претенденты
+                              на роль ключевых факторов.
+                              Учитывая ключевые сценарии поведения, внедрение современных методик предоставляет широкие
+                              возможности для системы
+                              массового участия. Кстати, тщательные исследования конкурентов, которые представляют собой
+                              яркий пример
+                              континентально-европейского типа политической культуры, будут объединены в целые кластеры
+                              себе подобных.
+                           </div>
+                           <div class="testimonial__date">
+                              Jan 20, 2024
+                           </div>
+                        </div>
+                     </div>
+                     <p class="empty-chat-message">Отзывов нет</p>
+                  </div>
+                  <a href="" class="button-violet">Добавить отзыв</a>
+               </div>
+            </div>
+         </section>
+         <section class="cat-block similar-products">
+            <div class="cat-block__body similar-products__body container">
+               <div class="cat-block__info">
+                  <p class="similar-products__title"> Объявления из той же категории </p>
+               </div>
+               <div class="cat-block__content element-animation">
+                  <div class="cat-block__slider swiper">
+                     <div class="cat-block__slider-wrapper swiper-wrapper">
+                        <a href="product-card.html" class="cat-block__slide product swiper-slide">
+                           <div class="product__image">
+                              <picture>
+                                 <source srcset="img/products/img1.webp" type="image/webp"><img
+                                    src="img/products/img1.png" alt="">
+                              </picture>
+                              <div class="product__images-button">
+                                 <svg>
+                                    <use xlink:href="img/icons/icons.svg#photo"></use>
+                                 </svg>
+                                 <span>3</span>
+                              </div>
+                           </div>
+                           <div class="product__name">Продаю карточку товара</div>
+                           <div class="product__price">150,000 ₽</div>
+                           <div class="product__date">
+                              <svg>
+                                 <use xlink:href="img/icons/icons.svg#calendar"></use>
+                              </svg>
+                              01 июля 2024
+                           </div>
+                        </a>
+                        <a href="product-card.html" class="cat-block__slide product swiper-slide">
+                           <div class="product__image">
+                              <picture>
+                                 <source srcset="img/products/img2.webp" type="image/webp"><img
+                                    src="img/products/img2.png" alt="">
+                              </picture>
+                              <div class="product__images-button">
+                                 <svg>
+                                    <use xlink:href="img/icons/icons.svg#photo"></use>
+                                 </svg>
+                                 <span>3</span>
+                              </div>
+                           </div>
+                           <div class="product__name">Продаю карточку товара</div>
+                           <div class="product__price">150,000 ₽</div>
+                           <div class="product__date">
+                              <svg>
+                                 <use xlink:href="img/icons/icons.svg#calendar"></use>
+                              </svg>
+                              01 июля 2024
+                           </div>
+                        </a>
+                        <a href="product-card.html" class="cat-block__slide product swiper-slide">
+                           <div class="product__image">
+                              <picture>
+                                 <source srcset="img/products/img3.webp" type="image/webp"><img
+                                    src="img/products/img3.png" alt="">
+                              </picture>
+                              <div class="product__images-button">
+                                 <svg>
+                                    <use xlink:href="img/icons/icons.svg#photo"></use>
+                                 </svg>
+                                 <span>3</span>
+                              </div>
+                           </div>
+                           <div class="product__name">Продаю карточку товара</div>
+                           <div class="product__price">150,000 ₽</div>
+                           <div class="product__date">
+                              <svg>
+                                 <use xlink:href="img/icons/icons.svg#calendar"></use>
+                              </svg>
+                              01 июля 2024
+                           </div>
+                        </a>
+                        <a href="product-card.html" class="cat-block__slide product swiper-slide">
+                           <div class="product__image">
+                              <picture>
+                                 <source srcset="img/products/img4.webp" type="image/webp"><img
+                                    src="img/products/img4.png" alt="">
+                              </picture>
+                              <div class="product__images-button">
+                                 <svg>
+                                    <use xlink:href="img/icons/icons.svg#photo"></use>
+                                 </svg>
+                                 <span>3</span>
+                              </div>
+                           </div>
+                           <div class="product__name">Продаю карточку товара</div>
+                           <div class="product__price">150,000 ₽</div>
+                           <div class="product__date">
+                              <svg>
+                                 <use xlink:href="img/icons/icons.svg#calendar"></use>
+                              </svg>
+                              01 июля 2024
+                           </div>
+                        </a>
+                        <a href="product-card.html" class="cat-block__slide product swiper-slide">
+                           <div class="product__image">
+                              <picture>
+                                 <source srcset="img/products/img1.webp" type="image/webp"><img
+                                    src="img/products/img1.png" alt="">
+                              </picture>
+                              <div class="product__images-button">
+                                 <svg>
+                                    <use xlink:href="img/icons/icons.svg#photo"></use>
+                                 </svg>
+                                 <span>3</span>
+                              </div>
+                           </div>
+                           <div class="product__name">Продаю карточку товара</div>
+                           <div class="product__price">150,000 ₽</div>
+                           <div class="product__date">
+                              <svg>
+                                 <use xlink:href="img/icons/icons.svg#calendar"></use>
+                              </svg>
+                              01 июля 2024
+                           </div>
+                        </a>
+                        <a href="product-card.html" class="cat-block__slide product swiper-slide">
+                           <div class="product__image">
+                              <picture>
+                                 <source srcset="img/products/img2.webp" type="image/webp"><img
+                                    src="img/products/img2.png" alt="">
+                              </picture>
+                              <div class="product__images-button">
+                                 <svg>
+                                    <use xlink:href="img/icons/icons.svg#photo"></use>
+                                 </svg>
+                                 <span>3</span>
+                              </div>
+                           </div>
+                           <div class="product__name">Продаю карточку товара</div>
+                           <div class="product__price">150,000 ₽</div>
+                           <div class="product__date">
+                              <svg>
+                                 <use xlink:href="img/icons/icons.svg#calendar"></use>
+                              </svg>
+                              01 июля 2024
+                           </div>
+                        </a>
+                        <a href="product-card.html" class="cat-block__slide product swiper-slide">
+                           <div class="product__image">
+                              <picture>
+                                 <source srcset="img/products/img3.webp" type="image/webp"><img
+                                    src="img/products/img3.png" alt="">
+                              </picture>
+                              <div class="product__images-button">
+                                 <svg>
+                                    <use xlink:href="img/icons/icons.svg#photo"></use>
+                                 </svg>
+                                 <span>3</span>
+                              </div>
+                           </div>
+                           <div class="product__name">Продаю карточку товара</div>
+                           <div class="product__price">150,000 ₽</div>
+                           <div class="product__date">
+                              <svg>
+                                 <use xlink:href="img/icons/icons.svg#calendar"></use>
+                              </svg>
+                              01 июля 2024
+                           </div>
+                        </a>
+                        <a href="product-card.html" class="cat-block__slide product swiper-slide">
+                           <div class="product__image">
+                              <picture>
+                                 <source srcset="img/products/img4.webp" type="image/webp"><img
+                                    src="img/products/img4.png" alt="">
+                              </picture>
+                              <div class="product__images-button">
+                                 <svg>
+                                    <use xlink:href="img/icons/icons.svg#photo"></use>
+                                 </svg>
+                                 <span>3</span>
+                              </div>
+                           </div>
+                           <div class="product__name">Продаю карточку товара</div>
+                           <div class="product__price">150,000 ₽</div>
+                           <div class="product__date">
+                              <svg>
+                                 <use xlink:href="img/icons/icons.svg#calendar"></use>
+                              </svg>
+                              01 июля 2024
+                           </div>
+                        </a>
+                     </div>
+                     <div class="cat-block-slider-prev slider-button-prev swiper-button-prev">
+                        <svg>
+                           <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                        </svg>
+                     </div>
+                     <div class="cat-block-slider-next slider-button-next swiper-button-next">
+                        <svg>
+                           <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                        </svg>
+                     </div>
+                  </div>
+               </div>
+               <button class="show-more-link show-more-products">
+                  Показать еще
+                  <svg>
+                     <use xlink:href="img/icons/icons.svg#refresh"></use>
+                  </svg>
+               </button>
+            </div>
+
+         </section>
+      </main>
+      <footer class="footer">
+         <div class="footer__body container">
+            <div class="footer-main">
+               <div class="footer__logo">
+                  <a href="index.html" aria-label="RizzCards перейти на главую страницу">
+                     <img src="img/logo.svg" alt="">
+                  </a>
+               </div>
+               <div class="footer__menu">
+                  <div class="footer__menu-list">
+                     <div class="footer__menu-col">
+                        <div>
+                           <p class="footer__menu-title">
+                              Блогерам
+                              <svg>
+                                 <use xlink:href="img/icons/icons.svg#chevron-down"></use>
+                              </svg>
+                           </p>
+                           <div class="footer__menu-links">
+                              <a href="" class="footer__menu-link">Заказы на ракламу</a>
+                           </div>
+                        </div>
+                        <div>
+                           <p class="footer__menu-title">
+                              Селлеру
+                              <svg>
+                                 <use xlink:href="img/icons/icons.svg#chevron-down"></use>
+                              </svg>
+                           </p>
+                           <div class="footer__menu-links">
+                              <a href="" class="footer__menu-link">Рост продаж на WB</a>
+                              <a href="" class="footer__menu-link">Рост продаж на Ozon</a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="footer__menu-col">
+                        <div>
+                           <p class="footer__menu-title">
+                              Производителю
+                              <svg>
+                                 <use xlink:href="img/icons/icons.svg#chevron-down"></use>
+                              </svg>
+                           </p>
+                           <div class="footer__menu-links">
+                              <a href="" class="footer__menu-link">Рассказать о своем товаре</a>
+                              <a href="" class="footer__menu-link">Фулфилмент / склады</a>
+                              <a href="" class="footer__menu-link">Логистика</a>
+                              <a href="" class="footer__menu-link">Доставка из Китая</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="footer__socials">
+                  <a href="" class="footer__social" aria-label="Вконтакте">
+                     <svg>
+                        <use xlink:href="img/icons/icons.svg#vk"></use>
+                     </svg>
+                  </a>
+                  <a href="" class="footer__social" aria-label="Youtube">
+                     <svg>
+                        <use xlink:href="img/icons/icons.svg#youtube"></use>
+                     </svg>
+                  </a>
+                  <a href="" class="footer__social" aria-label="Telegram">
+                     <svg>
+                        <use xlink:href="img/icons/icons.svg#telegram"></use>
+                     </svg>
+                  </a>
+                  <a href="" class="footer__social" aria-label="instagram">
+                     <svg>
+                        <use xlink:href="img/icons/icons.svg#instagram"></use>
+                     </svg>
+                  </a>
+               </div>
+            </div>
+         </div>
+         <div class="footer__under">
+            <div class="footer__under-body container">
+               <p>© 2024 RIZZ CARDS</p>
+               <div class="footer__policy">
+                  <a href="">Правила сервиса</a>
+                  <a href="">Пользовательское соглашение</a>
+                  <a href="">Служба поддержки</a>
+               </div>
+            </div>
+         </div>
+         <div class="footer-dev container">
+            <div class="footer-dev__body">
+               <a href="https://tutmee.ru/" target="_blank" class="footer-dev__link">
+                  <span>
+                     LTD Tutmee <br>
+                     Web development Agency
+                  </span>
+                  <img src="img/logo-dev.svg" alt="Tutmee">
+               </a>
+            </div>
+         </div>
+      </footer>
+      <div class="header__filter-body">
+         <div class="header__filter-title">
+            <svg>
+               <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+            </svg>
+            Фильтры
+         </div>
+         <form class="header__filter-settings">
+            <div class="header__filter-city">
+               <input type="text" class="input-with-label">
+               <span class="header__filter-label">Город или регион</span>
+            </div>
+            <div class="header__filter-category">
+               <div class="s-dropdown">
+                  <p class="dropdown__button">Категория</p>
+                  <ul class="dropdown__list">
+                     <li class="dropdown__list-item" data-value="category1">Категория 1</li>
+                     <li class="dropdown__list-item" data-value="category2">Категория 2</li>
+                     <li class="dropdown__list-item" data-value="category3">Категория 3</li>
+                     <li class="dropdown__list-item" data-value="category4">Категория 4</li>
+                     <li class="dropdown__list-item" data-value="category5">Категория 5</li>
+                  </ul>
+                  <input type="text" name="category" class="dropdown__input-hidden" value="">
+               </div>
+            </div>
+            <div class="header__filter-status">
+               <div class="checkbox">
+                  <input type="checkbox" id="vip">
+                  <label for="vip">Vip</label>
+               </div>
+            </div>
+            <div class="header__filter-price">
+               <div class="range">
+                  <div class="range__items">
+                     <div class="range__item">
+                        От: <input type="text" id="input-min"><span>₽</span>
+                     </div>
+                     <div class="range__item">
+                        До: <input type="text" id="input-max"><span>₽</span>
+                     </div>
+                  </div>
+                  <div id="price-range"></div>
+               </div>
+            </div>
+            <div class="header__filter-time">
+               <div class="header__filter-time-title">
+                  Срок размещения
+                  <svg>
+                     <use xlink:href="img/icons/icons.svg#chevron-down"></use>
+                  </svg>
+               </div>
+               <div class="header__filter-date-items">
+                  <p class="custom-radio">
+                     <input type="radio" name="date" id="hours24" class="custom-radio-input">
+                     <label for="hours24" class="custom-radio-label">За 24 часа</label>
+                  </p>
+                  <p class="custom-radio">
+                     <input type="radio" name="date" id="day7" class="custom-radio-input" checked>
+                     <label for="day7" class="custom-radio-label">За 7 дней</label>
+                  </p>
+                  <p class="custom-radio">
+                     <input type="radio" name="date" id="alltime" class="custom-radio-input">
+                     <label for="alltime" class="custom-radio-label">За все время</label>
+                  </p>
+               </div>
+            </div>
+            <button type="submit" class="header__filter-apply">Применить</button>
+            <button type="reset" class="header__filter-reset">
+               <svg>
+                  <use xlink:href="img/icons/icons.svg#close"></use>
+               </svg>
+               Сбросить фильтр
+            </button>
+         </form>
+      </div>
+      <div class="mobile-menu">
+         <a class="mobile-menu__item">
+            <svg>
+               <use xlink:href="img/icons/icons.svg#mm-home"></use>
+            </svg>
+         </a>
+         <a class="mobile-menu__item">
+            <svg>
+               <use xlink:href="img/icons/icons.svg#mm-heart"></use>
+            </svg>
+         </a>
+         <a class="mobile-menu__item">
+            <svg>
+               <use xlink:href="img/icons/icons.svg#mm-plus"></use>
+            </svg>
+         </a>
+         <a class="mobile-menu__item">
+            <svg>
+               <use xlink:href="img/icons/icons.svg#mm-comment"></use>
+            </svg>
+         </a>
+         <a class="mobile-menu__item">
+            <svg>
+               <use xlink:href="img/icons/icons.svg#mm-user"></use>
+            </svg>
+         </a>
+      </div>
+   </div>
+   <script src="js/nouislider.min.js?_v=20240806100927"></script>
+   <script src="js/swiper-bundle.min.js?_v=20240806100927"></script>
+   <script src="js/app.js?_v=20240806100927"></script>
+</body>
+
+</html>
